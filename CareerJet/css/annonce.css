@@ -1,0 +1,479 @@
+
+/* Styles existants... */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-attachment: fixed;
+    background-size: auto;
+}
+a
+{
+    text-decoration: none;
+}
+.header
+{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: rgb(250, 250, 250);
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.nav
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    /* Pour assurer que le sous-menu ne sort pas du conteneur principal */
+    position: relative;
+}
+
+.nav , .nav_item
+{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo , .nav_link , .btn
+{
+    color: #0c0c0c;
+}
+
+.nav_logo
+{
+    font-size: 25px;
+}
+.nav_item{
+    column-gap: 25px;
+}
+.nav_link:hover
+{
+    color: #d9d9d9;
+}
+.btn
+{
+    padding: 6px 24px;
+    border: 2px solid #000000;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:active
+{
+    transform: scale(0.98);
+}
+
+.services .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none; /* Supprime les puces */
+    margin: 0; /* Supprime la marge par défaut des ul */
+    padding: 0; /* Supprime le padding par défaut des ul */
+}
+.services a 
+{
+    color: #090909;
+}
+
+.services .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+.services .dropdown li 
+{
+    border-bottom: black dotted 1px;
+}
+.services .dropdown li:last-child
+{
+    border-bottom: none;
+}
+.services .dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Ajouts/Modifications pour la barre de filtrage */
+.filter {
+    display: flex; /* Nouveau */
+    justify-content: center; /* Centre les filtres horizontalement */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    padding: 10px 0; /* Ajoute un peu d'espace autour des filtres */
+    border-bottom: 1px solid silver;
+    border-width: 70%;
+
+}
+
+.filter-list {
+    display: flex; /* Rend la liste horizontale */
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ajuste les marges pour un alignement correct */
+    align-items: center; /* Centre les éléments de la liste verticalement */
+    margin-top: 70px;
+}
+
+.filter-item {
+    position: relative;
+    margin-right: 20px; /* Espacement entre les éléments de filtre */
+    padding: 5px 50px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: small;
+}
+.filter-list .filter-dropdown
+{
+    font-family: "Noto Sans", sans-serif;
+    font-size: small;
+    list-style-type: none;
+}
+
+
+.filter-button {
+    background-color: #fff; /* Couleur de fond pour les boutons */
+    border: 1px solid #ccc; /* Bordure pour les boutons */
+    color: #333;
+    padding: 10px;
+    border-radius: 5px; /* Arrondit les angles des boutons */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+/* Le reste du CSS reste inchangé */
+
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.filter-dropdown a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.filter-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.filter-item:hover .filter-dropdown {
+    display: block;
+}
+
+.filter-icon {
+    transition: transform 0.3s;
+}
+
+.filter-button:hover .filter-icon {
+    transform: rotate(180deg);
+}
+
+.clear-fix
+{
+    clear: both;
+}
+
+.resume
+{
+    width: 400px;
+    margin: center center;
+    padding: 0;
+
+}
+
+.resume a{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+/* .container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.announcement {
+    position: absolute;
+    border: 1px solid #000;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.announcement:hover {
+    background-color: #8d8989;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.skills {
+    font-size: 14px;
+}
+
+.details {
+    display: none;
+    border: 1px solid black;
+    padding: 10px;
+} */
+/* body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.annonces-wrapper {
+    list-style-type: none;
+    padding: 0;
+}
+
+.offer-wrapper {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.offer-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-details h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.company-place-offer {
+    display: flex;
+    flex-direction: column;
+}
+
+.companys-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.companys-place {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.offer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soft-skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.soft-skill {
+    background-color: #007bff;
+    color: #000;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.offer-publication {
+    font-size: 14px;
+    color: #6c757d;
+
+} */
+.container {
+    width: 400px;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px 10px;
+    box-shadow: inset;
+  }
+  
+.annonces-wrapper {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+/* 
+.offer-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.offer-wrapper:hover
+{
+    cursor: pointer;
+    pointer-events: none;
+} */
+
+.offer-wrapper { 
+    display: block; 
+    width: 100%;
+    padding: 15px; 
+    border: 1px solid #ccccccb1;
+    border-radius: 5%; 
+    margin-bottom: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+.offer-wrapper:hover 
+{ 
+    background-color: #f5f5f5; 
+} 
+.offer-wrapper * 
+{ 
+    pointer-events: none; 
+} 
+.offer-wrapper a 
+{ 
+    pointer-events: auto; 
+} 
+.offer-details {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.offer-details h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.offer-details h2 a
+{
+    color: #333;
+}
+
+.offer-details h2 a:hover
+{
+    text-decoration: underline;
+    color: #333;
+}
+
+.company-place-offer {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-place-offer .companys-name {
+    font-weight: light;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.company-place-offer .companys-place {
+    font-size: 14px;
+    color: #4582b8;
+}
+
+.offer-content {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soft-skills-list {
+    list-style: circle;
+    padding: 0;
+    margin-left: 20px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.soft-skills-list .soft-skill {
+    color: rgb(6, 6, 6);
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.offer-publication {
+    text-align: right;
+    font-size: 14px;
+    color: #6c757d;
+    
+}
+;.clear-fix
+{
+    clear: both;
+}
+
+.details-container
+{
+    /* float: right; */
+    
+}
+
+
+
+html{
+    overflow-x: hidden;
+}
+
+body .zusdhquodc{
+    background-color: #8400ff;
+  color: white;
+  width: 300px;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 0.5rem;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  text-decoration: none;
+    transition: .2s all ease-in-out;
+}
+body .zusdhquodc:hover{
+    background-color: #6400c1;
+}

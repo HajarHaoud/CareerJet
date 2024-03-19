@@ -1,0 +1,243 @@
+.one
+{
+    
+    background-image: url(pic1234.jpg);
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    /* align-items: center;  */
+    margin-left: 50px;
+    margin-right: 50px;
+    top: 50px;
+    bottom: 50px;
+    position: relative;
+    overflow: hidden;
+        
+}
+.two
+{
+    color: white;
+    position: absolute;
+    top: 40%;
+    padding-left: 100px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+.tree
+{
+    color: white;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    padding-left: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Style de base pour la barre de navigation */
+#nav-internal {
+    background-color: #ffffff; /* Couleur de fond */
+    border-bottom: 1px solid #eaeaea; /* Bordure en bas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
+    padding: 10px 0; /* Espacement interne en haut et en bas */
+    position: sticky; /* Position fixée */
+    top: 0; /* Fixer la barre de navigation en haut de la fenêtre */
+    width: 100%; /* Largeur pleine */
+    z-index: 1000; /* Z-index élevé pour empêcher le chevauchement */
+  }
+  
+  /* Style pour la classe container */
+  .container {
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer horizontalement */
+    padding: 20px 20px 20px 20px; /* Espacement interne sur les côtés */
+  }
+  
+  /* Style pour la classe wrapper */
+  .wrapper {
+    display: flex; /* Affichage en ligne */
+    justify-content: space-between; /* Espacement uniforme entre les éléments */
+  }
+  
+  /* Style pour la liste des ancres */
+  .anchors {
+    list-style: none; /* Supprimer les puces */
+    margin: 0; /* Supprimer les marges par défaut */
+    padding: 0; /* Supprimer les paddings par défaut */
+    display: flex; /* Affichage en ligne */
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Style pour chaque élément de la liste */
+  .anchor {
+    margin-right: 50px; /* Espacement entre chaque élément */
+  }
+  
+  /* Style pour le lien à l'intérieur de chaque élément */
+  .anchor-link {
+    text-decoration: none; /* Supprimer la soulignement du lien */
+    color: #333333; /* Couleur du texte */
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    transition: color 0.3s ease; /* Transition de la couleur lors du survol */
+  }
+  
+  /* Style pour le lien lorsqu'il est survolé */
+  .anchor-link:hover {
+    color: #007bff; /* Nouvelle couleur lors du survol */
+  }
+  
+  .a
+  {
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+
+    
+  }
+  .a_a
+  {
+    margin: 50px 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Alignement vertical */
+     /* Centrage horizontal */
+    
+  }
+  .b{
+  width: 50%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: sticky;
+  }
+  .h {
+    margin-bottom: 2vh; /* Marge en fonction de la hauteur de la fenêtre */
+}
+
+/* Style pour p */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+#s1-default {
+    background-color: #ffffff; /* Couleur de fond de la section */
+    padding: 20px; /* Espacement interne */
+}
+
+.container {
+    max-width: 1200px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+.wrapper {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrage horizontal */
+}
+
+.default1 {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centrage vertical */
+    flex-direction: row-reverse;
+}
+.default0 {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centrage vertical */
+}
+
+.__illustration {
+    flex: 1; /* Le contenu prendra tout l'espace disponible */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrage horizontal */
+}
+
+.__body {
+    flex: 1; /* Le contenu prendra tout l'espace disponible */
+    padding: 0 20px; /* Espacement interne */
+}
+
+.__title {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    
+    color: #333333; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+.__content {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    color: #666666; /* Couleur du texte */
+}
+.cta {
+    background-color: #f2f2f2; /* Couleur de fond */
+    padding: 20px; /* Espacement intérieur */
+    text-align: center; /* Alignement du contenu au centre */
+  }
+  
+  .__title {
+font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    margin-bottom: 10px; /* Marge en bas du titre */
+  }
+  
+  .__content {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+  
+  .btn {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    display: inline-block; /* Afficher comme un élément en ligne */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    background-color: #2f2c2c; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    text-decoration: none; /* Supprimer la soulignement du lien */
+     /* Bord arrondi */
+    transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
+  }
+  
+  .btn:hover {
+    background-color: #303132; /* Couleur de fond du bouton au survol */
+  }
+ .legal0
+ {
+    margin-left: 50px;
+ }
+ .rights {
+    position: sticky;
+    padding-left: 1100px;
+}
+
+.legal-wrapper {
+    position: relative;
+    width: 100%;
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+} 
+
+
+  
+
+
+
+
+
+
+html{
+  overflow-x: hidden;
+}

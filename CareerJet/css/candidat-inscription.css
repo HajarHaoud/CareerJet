@@ -1,0 +1,281 @@
+* {
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligner le contenu en haut */
+    height: 100%;
+    background: #fafafa;
+}
+
+.Container {
+    max-width: 70%;
+    padding: 50px;
+    margin: 50px 28px 0; /*Marge en haut pour placer le titre en haut */
+    border-radius: 10px;
+    overflow: hidden;
+    /* background: rgba(0,0,0,2);
+    box-shadow: 0 15px 20px rgba(0,0,0,6); */
+    display: flex;
+    flex-direction: column; /* Afficher les éléments en colonne */
+    height: 100%;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #060606;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(33, 30, 30);
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0; /* Supprimer la marge en haut */
+}
+
+.content {
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-grow: 1; /* Faire en sorte que le contenu prenne tout l'espace vertical disponible */
+}
+.input-box3
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(47% - 20px); /* Calculer la largeur de chaque colonne avec une marge de 20px entre les colonnes */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px; /* Ajouter une marge à gauche */
+    margin-right: 10px; 
+}
+.input-box3:nth-child(2n) {
+    justify-content: end;
+    margin-left: 5px;
+}
+.input-box3 label {
+    width: 95%;
+    color: #000000;
+    font-weight: bold;
+    margin: 5px 0;
+    padding-left:0px;
+    
+    
+}
+.input-box3 select{
+    height: 40px;
+    width: 100%; /* Utiliser une largeur de 100% pour que tous les inputs aient la même largeur */
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box3 select:focus, 
+.input-box3 select:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-box2
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20px); /* Calculer la largeur de chaque colonne avec une marge de 20px entre les colonnes */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px; /* Ajouter une marge à gauche */
+    margin-right: 10px; 
+}
+.input-box2:nth-child(2n) {
+    justify-content: end;
+    margin-left: 5px;
+}
+.input-box2 label {
+    width: 95%;
+    color: #000000;
+    font-weight: bold;
+    margin: 5px 0;
+    padding-left:0px;
+    
+    
+}
+.input-box2 input {
+    height: 40px;
+    width: 100%; /* Utiliser une largeur de 100% pour que tous les inputs aient la même largeur */
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-box2 input:focus, 
+.input-box2 input:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(33.33% - 20px); /* Calculer la largeur de chaque colonne avec une marge de 20px entre les colonnes */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px; /* Ajouter une marge à gauche */
+    margin-right: 10px;
+}
+
+.input-box:nth-child(2n) {
+    justify-content: end;
+    margin-left: 5px;
+}
+
+.input-box label {
+    width: 95%;
+    color: #000000;
+    font-weight: bold;
+    margin: 5px 0;
+    padding-left:0px;
+    
+    
+}
+.input-box select{
+    height: 40px;
+    width: 100%; /* Utiliser une largeur de 100% pour que tous les inputs aient la même largeur */
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box select:focus, 
+.input-box select:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.input-box input {
+    height: 40px;
+    width: 100%; /* Utiliser une largeur de 100% pour que tous les inputs aient la même largeur */
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-box input:focus, 
+.input-box input:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.alert p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #000;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+.alert a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(17, 56, 71);
+}
+
+.alert a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #5b595b;
+}
+
+.button-container {
+    margin: 15px 0;
+}
+
+.button-container button {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 250px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #afb5ca, #464545, #0f0e0f);
+    cursor: pointer;
+    transition: 0.3%;
+}
+
+.button-container button:hover {
+    background-image: linear-gradient(to right, #0f0e0f), #464545, #afb5ca);
+}
+
+.input-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(47% - 10px); /* Mettre une largeur de 50% pour chaque champ avec une marge de 10px entre les deux */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 5px; /* Réduire la marge à gauche */
+    margin-right: 5px; /* Réduire la marge à droite */
+    
+}
+
+.input-box1 input {
+    
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box1:nth-child(2n) {
+    justify-content: end;
+    margin-left: 5px;
+}
+
+.input-box1 label {
+    width: 95%;
+    color: #000;
+    font-weight: bold;
+    margin: 5px 0;
+    padding-left: 0;
+}
+
+
+
+
+.input-box1 input:focus, 
+.input-box1 input:valid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .Container {
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+}
+
+
+
+html{
+    overflow-x: hidden;
+}
